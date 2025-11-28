@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="$(MSBuildThisFileDirectory)\..\..\src\Archiduct\buildMultiTargeting\Archiduct.props" />
+  <PropertyGroup>
+    <TargetFrameworks>$(TestTargetFrameworks)</TargetFrameworks>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Testing.Platform.MSBuild" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Archiduct\Archiduct.csproj" />
+  </ItemGroup>
+</Project>
